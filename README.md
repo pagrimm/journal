@@ -1,10 +1,10 @@
-# Project Name
+# Journal
 **for Epicodus**
-**By Peter Grimm, 05.29.2020**
+**By Peter Grimm, Sean Downs 06.22.2020**
 
 ## Description
 
-Insert description here
+Excercise to practice using NPM and webpack, a site that allows you to enter a journal entry and then gives you a number of metrics about your entry.
 
 ## Specifications
 Behaviors:
@@ -17,8 +17,9 @@ Behaviors:
 ## Setup/Installation Requirements
 
 * Clone this repository 
-* Browse to the ` ` folder
-* Open `index.html` in a browser of your choice
+* Browse to the `journal` folder
+* Open in a code editor of your choice
+* Run `npm install` to install dependencies
 
 ## Technologies Used
 
@@ -26,8 +27,10 @@ HTML
 CSS  
 Bootstrap  
 jQuery
+Node.js
+Webpack
 
 ## Legal
 
-Copyright (c) 2020, **_Peter Grimm_**  
+Copyright (c) 2020, **_Peter Grimm, Sean Downs_**  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) This software is licensed under the MIT license.
