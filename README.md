@@ -7,11 +7,12 @@
 Insert description here
 
 ## Specifications
-User can enter a title for a journal entry
-User can enter a body for a journal entry
-The number of words in an entry can be displayed
-The number of vowels and consonants in an entry can be displayed
-The teaser (first sentence or 8 words) of a journal entry can be displayed
+Behaviors:
+* User can enter a title for a journal entry
+* User can enter a body for a journal entry
+* The number of words in an entry can be displayed
+* The number of vowels and consonants in an entry can be displayed
+* The teaser (first sentence or 8 words) of a journal entry can be displayed
 
 ## Setup/Installation Requirements
 
