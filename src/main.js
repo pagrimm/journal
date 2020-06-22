@@ -3,7 +3,6 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { Journal } from './journal';
-import { checkIfVowel } from './journal';
 
 $(document).ready(function (){
   $("form").submit(function (event) {

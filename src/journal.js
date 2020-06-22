@@ -6,7 +6,7 @@ export function Journal(title, body) {
 Journal.prototype.countWords = function () {
   let output = this.body.split(" ");
   return output.length;
-}
+};
 
 Journal.prototype.countLetters = function () {
   let totalVowels = 0;
@@ -23,7 +23,7 @@ Journal.prototype.countLetters = function () {
   }
   outputArray = [totalVowels, totalConsonants];
   return outputArray;
-}
+};
 
 Journal.prototype.getTeaser = function () {
   let output = "";
@@ -38,9 +38,9 @@ Journal.prototype.getTeaser = function () {
     }
   }
   return output;
-}
+};
 
-export function checkIfVowel (letter) {
+function checkIfVowel (letter) {
   const vowels = ["a", "e", "i", "o", "u"];
   for (let n = 0; n < vowels.length; n++) {
     if (letter === vowels[n]){
