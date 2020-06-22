@@ -12,7 +12,7 @@ Journal.prototype.countLetters = function () {
   let totalVowels = 0;
   let totalConsonants = 0;
   let outputArray = [];
-  for (i = 0; i < this.body.length; i++) {
+  for (let i = 0; i < this.body.length; i++) {
     if (/[a-zA-Z]/.test(this.body.charAt(i)) === true) {
       if (checkIfVowel(this.body.charAt(i).toLowerCase()) === true) {
         totalVowels += 1;
@@ -28,11 +28,11 @@ Journal.prototype.countLetters = function () {
 Journal.prototype.getTeaser = function () {
   let output = "";
   let outputArray = [];
-  for (i = 0; i < 8; i++) {
+  for (let i = 0; i < 8; i++) {
     outputArray.push(this.body.split(" ")[i]);
   }
   output = outputArray.join(" ");
-  for (i = 0; i < output.length; i++) {
+  for (let i = 0; i < output.length; i++) {
     if (output.charAt(i) === ".") {
       output = output.slice(0, i + 1);
     }
@@ -42,7 +42,7 @@ Journal.prototype.getTeaser = function () {
 
 export function checkIfVowel (letter) {
   const vowels = ["a", "e", "i", "o", "u"];
-  for (n = 0; n < vowels.length; n++) {
+  for (let n = 0; n < vowels.length; n++) {
     if (letter === vowels[n]){
       return true;
     }
