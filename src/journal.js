@@ -1,4 +1,4 @@
-function Journal(title, body) {
+export function Journal(title, body) {
   this.title = title;
   this.body = body;
 }
@@ -16,10 +16,8 @@ Journal.prototype.countLetters = function () {
     if (/[a-zA-Z]/.test(this.body.charAt(i)) === true) {
       if (checkIfVowel(this.body.charAt(i).toLowerCase()) === true) {
         totalVowels += 1;
-        console.log(totalVowels);
       } else {
         totalConsonants += 1;
-        console.log(totalConsonants);
       }
     }
   }
@@ -42,7 +40,7 @@ Journal.prototype.getTeaser = function () {
   return output;
 }
 
-function checkIfVowel (letter) {
+export function checkIfVowel (letter) {
   const vowels = ["a", "e", "i", "o", "u"];
   for (n = 0; n < vowels.length; n++) {
     if (letter === vowels[n]){
