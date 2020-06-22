@@ -6,9 +6,22 @@
   <title>Document</title>
 </head>
 <body class="container">
-  <section class="card">
-
+  <header class="jumbotron">
+    <h1>Journal</h1>
+  </header>
+  <section class="card bg-primay">
+    <div class="card-header">Input</div>
+    <form id="form1">
+    <div class="card-body">
+      <label for="input-title"><div>Title</div></label>
+      <input id="input-title" type="text" class="form-control">
+      <label for="input-body"><div>Body</div></label>
+      <input id="input-body" type="textarea" class="form-control">
+    </div>
+    <button type="submit" form="form1" class="btn">Submit</button>
+    </form>
   </section>
-  
+  <section class="output">
+  </section>
 </body>
 </html>
