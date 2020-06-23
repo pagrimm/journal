@@ -11,18 +11,16 @@ Journal.prototype.countWords = function () {
 Journal.prototype.countLetters = function () {
   let totalVowels = 0;
   let totalConsonants = 0;
-  let outputArray = [];
   for (let i = 0; i < this.body.length; i++) {
-    if (/[a-zA-Z]/.test(this.body.charAt(i)) === true) {
-      if (checkIfVowel(this.body.charAt(i).toLowerCase()) === true) {
+    if (/[a-zA-Z]/.test(this.body.charAt(i))) {
+      if (checkIfVowel(this.body.charAt(i).toLowerCase())) {
         totalVowels += 1;
       } else {
         totalConsonants += 1;
       }
     }
   }
-  outputArray = [totalVowels, totalConsonants];
-  return outputArray;
+  return [totalVowels, totalConsonants];
 };
 
 Journal.prototype.getTeaser = function () {
